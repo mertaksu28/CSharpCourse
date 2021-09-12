@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project4.DataAccess
 {
-    public class ProductDal
+    public class ProductDal:IProductDal
     {
         List<Product> _products;
         public ProductDal()
@@ -20,6 +20,11 @@ namespace Project4.DataAccess
                 new Product{ProductId=1, ProductName="Mac Bilgisayar", QuantityPerUnit="32 GB Ram", UnitPrice=10000, UnitsInStock=3},
                 new Product{ProductId=1, ProductName="Dell Bilgisayar", QuantityPerUnit="32 GB Ram", UnitPrice=10000, UnitsInStock=10}
             };
+        }
+
+        public void Add(Product product)
+        {
+            Console.WriteLine("Ado.Net ile Eklendi");
         }
 
         public List<Product> GetAll()
