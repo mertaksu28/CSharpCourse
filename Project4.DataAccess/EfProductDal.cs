@@ -18,7 +18,7 @@ namespace Project4.DataAccess
             {
                 new Product{ProductId=1, ProductName="Acer ef Bilgisayar", QuantityPerUnit="32 GB Ram", UnitPrice=10000, UnitsInStock=2},
                 new Product{ProductId=1, ProductName="Asus ef Bilgisayar", QuantityPerUnit="32 GB Ram", UnitPrice=10000, UnitsInStock=1},
-                new Product{ProductId=1, ProductName="Hp ef   Bilgisayar", QuantityPerUnit="32 GB Ram", UnitPrice=10000, UnitsInStock=0},
+                new Product{ProductId=1, ProductName="Hp ef Bilgisayar", QuantityPerUnit="32 GB Ram", UnitPrice=10000, UnitsInStock=0},
                 new Product{ProductId=1, ProductName="Mac ef Bilgisayar", QuantityPerUnit="32 GB Ram", UnitPrice=10000, UnitsInStock=3},
                 new Product{ProductId=1, ProductName="Dell ef Bilgisayar", QuantityPerUnit="32 GB Ram", UnitPrice=10000, UnitsInStock=10}
             };

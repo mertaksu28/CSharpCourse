@@ -1,5 +1,6 @@
 ﻿using Project4.Business;
 using Project4.DataAccess;
+using Project4.Entities;
 using System;
 
 namespace Project4.ConsoleUI
@@ -14,6 +15,16 @@ namespace Project4.ConsoleUI
             {
                 Console.WriteLine(product.ProductName);
             }
+            try
+            {
+                productManager.Add(new Product { ProductId = 10, ProductName = "Laptop", QuantityPerUnit = "4 ayaklı masa", UnitPrice = 1000, UnitsInStock = 10 });
+            }
+            catch (DuplicateProductException exception)
+            {
+
+                Console.WriteLine(exception.Message);
+            }
+            
 
         }
     }

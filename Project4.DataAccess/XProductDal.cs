@@ -24,7 +24,8 @@ namespace Project4.DataAccess
 
         public void Add(Product product)
         {
-            Console.WriteLine("X ile eklendi");
+            throw new Exception("Veritabanına bağlanılamadı. şifre doğru değil");
+            //Console.WriteLine("X ile eklendi");
         }
 
         public void Delete(Product product)
