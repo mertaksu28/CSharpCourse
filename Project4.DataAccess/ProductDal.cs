@@ -13,7 +13,7 @@ namespace Project4.DataAccess
         public ProductDal()
         {
             _products = new List<Product>
-            {
+            { 
                 new Product{ProductId=1, ProductName="Acer Bilgisayar", QuantityPerUnit="32 GB Ram", UnitPrice=10000, UnitsInStock=2},
                 new Product{ProductId=1, ProductName="Asus Bilgisayar", QuantityPerUnit="32 GB Ram", UnitPrice=10000, UnitsInStock=1},
                 new Product{ProductId=1, ProductName="Hp Bilgisayar", QuantityPerUnit="32 GB Ram", UnitPrice=10000, UnitsInStock=0},
