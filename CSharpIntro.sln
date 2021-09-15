@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project4.ConsoleUI", "Proje
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project4.Entities", "Project4.Entities\Project4.Entities.csproj", "{D8FA661E-51B8-4BDF-9243-118A115EC8DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{99582CFB-70D8-443D-8F18-DC10E9B3EEBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics", "Generics\Generics.csproj", "{99582CFB-70D8-443D-8F18-DC10E9B3EEBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqProject", "LinqProject\LinqProject.csproj", "{595DE95D-DC73-462E-8FA1-46718DF33F3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{99582CFB-70D8-443D-8F18-DC10E9B3EEBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99582CFB-70D8-443D-8F18-DC10E9B3EEBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99582CFB-70D8-443D-8F18-DC10E9B3EEBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{595DE95D-DC73-462E-8FA1-46718DF33F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{595DE95D-DC73-462E-8FA1-46718DF33F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{595DE95D-DC73-462E-8FA1-46718DF33F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{595DE95D-DC73-462E-8FA1-46718DF33F3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
