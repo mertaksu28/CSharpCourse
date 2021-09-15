@@ -38,7 +38,7 @@ namespace Project4.DataAccess
             return _products;
         }
 
-        public List<Product> GetById(int id)
+        public Product GetById(int id)
         {
             throw new NotImplementedException();
         }
