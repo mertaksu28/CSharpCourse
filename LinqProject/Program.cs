@@ -37,15 +37,30 @@ namespace LinqProject
 
             //AscDscTest(products);
 
+            //ClassicLinqTest(products);
+
+            var result = from p in products
+                         join c in categories // İki tabloyu birleştrdik
+                         on p.CategoryId equals c.CategoryId // Kategori id lerine göre birleştirdik
+                         select new ProductDto { ProductId = p.ProductId, ProductName = p.ProductName, CategoryName = c.CategoryName, UnitPrice = p.UnitPrice };
+            foreach (var productDto in result)
+            {
+                Console.WriteLine(productDto.CategoryName + " : " + productDto.ProductName);
+            }
+
+
+        }
+
+        private static void ClassicLinqTest(List<Product> products)
+        {
             var result = from p in products
                          where p.UnitPrice > 6000
                          orderby p.UnitPrice
-                         select p;
+                         select new ProductDto { ProductId = p.ProductId, ProductName = p.ProductName, UnitPrice = p.UnitPrice };
             foreach (var product in result)
             {
                 Console.WriteLine(product.ProductName);
             }
-
         }
 
         private static void AscDscTest(List<Product> products)
@@ -117,6 +132,14 @@ namespace LinqProject
         }
 
     }
+}
+
+class ProductDto
+{
+    public int ProductId { get; set; }
+    public string CategoryName { get; set; }
+    public string ProductName { get; set; }
+    public decimal UnitPrice { get; set; }
 }
 
 class Product
