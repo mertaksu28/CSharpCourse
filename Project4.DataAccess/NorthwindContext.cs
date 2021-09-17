@@ -17,7 +17,18 @@ namespace Project4.DataAccess
         }
 
         public DbSet<Product> Products { get; set; }
+        public DbSet<Personel> Personels { get; set; }
 
-    } 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //Fluent Mapping
+            //modelBuilder.HasDefaultSchema("admin");
+            modelBuilder.Entity<Personel>().ToTable("Employees");
+            modelBuilder.Entity<Personel>().Property(p => p.Id).HasColumnName("EmployeeID");
+            modelBuilder.Entity<Personel>().Property(p => p.Name).HasColumnName("FirstName");
+            modelBuilder.Entity<Personel>().Property(p => p.SurName).HasColumnName("LastName");
+        }
+
+    }
 
 }

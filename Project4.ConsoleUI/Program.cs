@@ -13,10 +13,10 @@ namespace Project4.ConsoleUI
 
             productManager.Add(new Product { ProductName = "Klavye", CategoryId = 1, QuantityPerUnit = "4 ayaklı masa", UnitPrice = 1000, UnitsInStock = 10 });
 
-            foreach (var product in productManager.GetAll())
-            {
-                Console.WriteLine(product.ProductName);
-            }
+            //foreach (var product in productManager.GetAll())
+            //{
+            //    Console.WriteLine(product.ProductName);
+            //}
             //try
             //{
             //    productManager.Add(new Product { ProductId = 10, ProductName = "Laptop", QuantityPerUnit = "4 ayaklı masa", UnitPrice = 1000, UnitsInStock = 10 });
@@ -27,6 +27,11 @@ namespace Project4.ConsoleUI
             //    Console.WriteLine(exception.Message);
             //}
 
+            PersonelManager personelManager = new PersonelManager(new EfPersonelDal());
+            foreach (var personel in personelManager.GetAll())
+            {
+                Console.WriteLine("{0} / {1} / {2}", personel.Id, personel.Name, personel.Name);
+            }
 
         }
     }
