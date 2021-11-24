@@ -37,6 +37,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadingDemo1", "Threading
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncDemo1", "AsyncDemo1\AsyncDemo1.csproj", "{90977CF9-4A8A-471D-BEF4-F67E361B8207}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncDemo2", "AsyncDemo2\AsyncDemo2.csproj", "{9FDA106C-B17F-4208-B289-45177E8183CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{90977CF9-4A8A-471D-BEF4-F67E361B8207}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90977CF9-4A8A-471D-BEF4-F67E361B8207}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90977CF9-4A8A-471D-BEF4-F67E361B8207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FDA106C-B17F-4208-B289-45177E8183CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FDA106C-B17F-4208-B289-45177E8183CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FDA106C-B17F-4208-B289-45177E8183CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FDA106C-B17F-4208-B289-45177E8183CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
