@@ -33,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqProject", "LinqProject\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkDemo", "EntityFrameworkDemo\EntityFrameworkDemo.csproj", "{5C1CAA83-35B3-4501-A40B-E4E1F7396993}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadingDemo1", "ThreadingDemo1\ThreadingDemo1.csproj", "{09935F9F-1BBA-48A2-AFFA-9C8CBFB2B4CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadingDemo1", "ThreadingDemo1\ThreadingDemo1.csproj", "{09935F9F-1BBA-48A2-AFFA-9C8CBFB2B4CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncDemo1", "AsyncDemo1\AsyncDemo1.csproj", "{90977CF9-4A8A-471D-BEF4-F67E361B8207}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{09935F9F-1BBA-48A2-AFFA-9C8CBFB2B4CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09935F9F-1BBA-48A2-AFFA-9C8CBFB2B4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09935F9F-1BBA-48A2-AFFA-9C8CBFB2B4CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90977CF9-4A8A-471D-BEF4-F67E361B8207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90977CF9-4A8A-471D-BEF4-F67E361B8207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90977CF9-4A8A-471D-BEF4-F67E361B8207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90977CF9-4A8A-471D-BEF4-F67E361B8207}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
