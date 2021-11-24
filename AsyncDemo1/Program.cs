@@ -10,13 +10,26 @@ namespace AsyncDemo1
         {
             Console.WriteLine($"Thread no: {Thread.CurrentThread.ManagedThreadId}");
 
-            Task task1 = new Task(Process1);
+            //Task task1 = new Task(Process1);
 
-            task1.Start();
+            //task1.Start();
+
+            //Task task1 = Task.Factory.StartNew(Process1);
+
+            //Task task1 = Task.Run(Process1);
+
+            //Task task1 = Task.Run(() =>
+            //{
+            //    Process1();
+            //    Process2();
+            //});
+
+            Task task1 = Task.Run(Process1);
+
+            task1.Wait();
 
             Process2();
 
-            Console.ReadKey();
         }
 
         static void Process1()
